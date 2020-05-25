@@ -8,6 +8,12 @@ class Individual:
         self._personalData = self.name + self.DOB + str(self._ssn)
         self._identity = sha256(str.encode(self._personalData))
 
+    #Todo
+    #def getIndividualName
+    #def getIndividualDOB
+    #def getAccountBalance
+    #def getIncomeRate
+
     def __str__(self):
         
         return str(self._identity.hexdigest())
