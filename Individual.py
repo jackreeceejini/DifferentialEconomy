@@ -1,14 +1,16 @@
+from hashlib import sha256
 class Individual:
     def __init__(self, name, dateOfBirth, SSN):
 
         self.name = name
         self.DOB = dateOfBirth
         self._ssn = SSN
-        self._identity = hash(self.name + self.DOB + str(self._ssn))
+        self._personalData = self.name + self.DOB + str(self._ssn)
+        self._identity = sha256(str.encode(self._personalData))
 
     def __str__(self):
         
-        return str(self._identity)
+        return str(self._identity.hexdigest())
 
 
 
