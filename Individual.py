@@ -9,7 +9,8 @@ class Individual:
         self._identity = sha256(str.encode(self._personalData))
 
     #Todo
-    #def getIndividualName
+    def getIndividualName(self):
+        return self.name
     #def getIndividualDOB
     #def getAccountBalance
     #def getIncomeRate
