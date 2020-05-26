@@ -19,8 +19,10 @@ class Individual:
         pass
 
     def __str__(self):
-        
         return str(self._identity.hexdigest())
+
+    def __repr__(self):
+        return self._identity.hexdigest()
 
 
 class Account:
