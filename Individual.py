@@ -8,7 +8,7 @@ class Individual:
         self._personalData = self.name + self.DOB + str(self._ssn)
         self._identity = sha256(str.encode(self._personalData))
 
-    #Todo
+    
     def getIndividualName(self):
         return self.name
     def getIndividualDOB(self):
@@ -23,6 +23,9 @@ class Individual:
         return str(self._identity.hexdigest())
 
 
+class Account:
+    def __init__(self,id):
+        pass
 
 #Testing
 
