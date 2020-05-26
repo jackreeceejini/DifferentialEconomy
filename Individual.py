@@ -13,8 +13,9 @@ class Individual:
         return self.name
     def getIndividualDOB(self):
         return self.DOB
-    def getAccountBalance(self)
-    #def getIncomeRate
+    def getAccountBalance(self):
+        pass
+    def getIncomeRate()
 
     def __str__(self):
         
