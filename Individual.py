@@ -11,8 +11,9 @@ class Individual:
     #Todo
     def getIndividualName(self):
         return self.name
-    #def getIndividualDOB
-    #def getAccountBalance
+    def getIndividualDOB(self):
+        return self.DOB
+    def getAccountBalance(self)
     #def getIncomeRate
 
     def __str__(self):
